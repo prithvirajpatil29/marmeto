@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+body{
+    font-family: "Readex Pro", sans-serif;
+}
+.bg-blue{
+    background-color: #F0F4FF;
+}
+.bg-dark-blue{
+    background-color: #6870D1;
+}
+.display-6{
+    font-size: 18px;
+}
+.display-7{
+    font-size: 20px;
+}
+.header>nav .logo-content-media{
+    display: none;
+}
+.containerflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header>nav a{
+    font-size: 18px;
+    font-family:sans-serif;
+    font-weight: bold;
+    color: #3A3E5E;
+    cursor: pointer;
+    margin: 5px 30px;
+}
+.header>nav a:hover{
+    color: #000;
+}
+.header>nav .logo-content-style{
+    margin: -4px 40px;
+}
+.header>nav .logo-content-style span, .header>nav .logo-content-media span, .header>nav .offcanvas h2{
+    color: #6870D1;
+    font-size: 1.25rem;
+}
+.header>nav .logo-content-style span:hover, .header>nav .logo-content-media span:hover{
+    color: #000;
+}
+.header>nav .logo{
+    height: 50px;
+    width: 50px;
+}
+.header>nav .offcanvas{
+    width: 480px;
+}
+.header>nav .offcanvas p{
+    font-size: 18px;
+}
+.header>nav .offcanvas h2{
+    font-size: 30px;
+}
+.header>nav .offcanvas .contact-number p{
+    margin: 0;
+}
+.btn-sidebar{
+    margin-left: 0px;
+}
+.btn-navbar{
+    color: #fff;
+}
+.container .cleaning-text{
+    font-size: 100px;
+    color: #6870D1;
+}
+.container .cleaning-text-color{
+    color: #6870D1;
+}
+.container .appointment-booking .btn-appointment{
+    background-color: #6870D1;
+    padding: 10px 40px;
+}
+.container .appointment-booking .btn-appointment:hover{
+    background-color: #353EAD;
+}
+.container .appointment-booking .btn-livebooking{
+    background-color: #e082c5 ;
+    padding: 10px 30px;
+}
+
+.container .appointment-booking .btn-livebooking:hover{
+    background-color:#CF3DA5 ;
+}
+.container .cleaning-start{
+    background-color: #6870D1;
+}
+.container .cleaning-content{
+    margin-top: 130px;
+    padding-left: 80px;
+}
+.container .start{
+    width: fit-content;
+    padding: 10px;
+}
+.container .sanitized-cleaning i{
+    color: #e082c5;
+}
+.container .sanitized-cleaning .sanitized-cleaning-heading{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 32px;
+    color: #e082c5;
+}
+.container .sanitized-cleaning .sanitized-cleaning-para{
+    font-size: 20px;
+}
+.text-dark-blue{
+    color: #6870D1;
+}
+
+.container .sanitized-h1tag{
+    margin-bottom: 42px;
+}
+.container .review .review-image{
+    height: 60px;
+    width: 60px;
+}
+.container .review .review-para{
+    font-size: 20px;
+}
+.container .review .review-content p{
+    margin-bottom: 3px;
+}
+.container .review i{
+    cursor: pointer;
+}
+.margin-top-images{
+    margin-top: 100px;
+    padding: 100px ;
+}
+.margin-top-images img{
+    cursor: pointer;
+}
+.container .satges button{
+    background-color: #6870D1 !important;
+    cursor:default;
+}
+.accordian-padding{
+    padding: 0 !important;
+}
+.accordian-padding .border-top, .accordian-padding .border-bottom{
+    border-color: #6870D1 !important;
+    border-width: 1px !important;
+}
+.accordian-padding a{
+    text-decoration: none !important;
+    color: #6870D1 !important;
+}
+.accordian-padding a i{
+    font-size: 18px;
+    color: #000 ;
+}
+.footer .footer-keeping-clean p{
+    color: #bbbbbb;
+}
+.footer-copy p{
+    color: #bbbbbb;
+}
+.partner .partner-image{
+    height: 130px;
+    width: 100%;
+}
+
+.partner .partner-image img{
+    height: 100%;
+    width: 100%;
+}
+
+.btn-partner-pink{
+    background-color: #e082c5;
+    color: #fff;
+    padding: 10px 20px;
+    width: 200px;
+    margin-top: 15px !important;
+}
+.btn-partner-pink:hover{
+    background-color: #CF3DA5;
+}
+.partner .card-text{
+    height: 150px;
+}
+.contact-phone{
+    height: 150px;
+}
+.contact-phone>div{
+    padding: 25px 60px;
+}
+.contact-phone .contact-phone-content h2{
+    color: #e082c5;
+}
+.contact-phone .contact-phone-content p, .contact-phone i{
+    color: #6870D1;
+    transition: 0.3s;
+}
+.contact-phone .contact-phone-content p:hover{
+    cursor: pointer;
+    color: #fff;
+}
+.contact-phone .contact-address-content p{
+    color: #e082c5;
+}
+.contact-phone .contact-address-content p:hover{
+    color: #e082c5;
+    cursor:auto;
+}
+ .contact-second-row{
+    margin-top: 25px;
+}
