@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cleaning-service</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- <link rel="stylesheet" href="./assets/css/media.css"> -->
+    <link rel="icon" href="./assets/images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header bg-blue py-3">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container ">
+              <a class="navbar-brand d-block d-lg-none " href="#">
+                <img src="./assets/images/logo.png" alt="logo">
+                <span  class="ms-2 navbar-caption">RefreshM5</span>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse row " id="navbarNavAltMarkup">
+                <ul class="navbar-nav d-lg-flex justify-content-start justify-content-center align-items-start align-items-lg-center ps-3">
+                    <li class="nav-item  me-xl-5 me-lg-3">
+                      <a class="nav-link " aria-current="page" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item me-xl-5 me-lg-3">
+                        <a class="nav-link" href="#">Features</a>
+                      </li>
+                    <li class="nav-item me-xl-5 me-lg-3">
+                      <a class="nav-link" href="#">About us</a>
+                    </li>
+                    
+                    <li class="nav-item mx-lg-2 mx-xl-4">
+                        <a class="nav-link logo-content-style d-flex d-none d-lg-block" href="#">
+                            <img src="./assets/images/logo.png" alt="logo" class="logo">
+                            <span  class="ms-2 navbar-caption">RefreshM5</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ms-lg-5 me-xl-5 me-lg-3">
+                        <a class="nav-link" href="#">Stages</a>
+                    </li>
+                    <li class="nav-item me-xl-5 me-lg-3">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item me-xl-5 me-lg-3">
+                        <a class="nav-link" href="#">Contacts</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="btn nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                            <i class="fa-solid fa-grip-lines text-white fw-bold fs-2  "></i>
+                        </a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+      
+      
+      <div class="offcanvas bg-blue offcanvas-end " tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header mt-3">
+            <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body mt-4 d-flex flex-column align-items-center">
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ex voluptatem voluptas aut quod, autem obcaecati molestiae.</p>
+            <h2 class="mt-4 fs-2 text-dark-blue">RefreshM5</h2>
+            <p class="">4100 Ross Street, Okawville, IL</p>
+            <div class="contact-number mt-3">
+                <p>+1 234-567-8900</p>
+                <p>+9 876-543-2100</p>
+            </div>
+            <div class="social-media-icons d-flex gap-2 mt-5 mt-3">
+                <i class="fa-brands fa-facebook-f    bg-dark-blue text-white rounded-circle mx-2"></i>
+                <i class="fa-brands fa-twitter   bg-dark-blue text-white rounded-circle  mx-2"></i>
+                <i class="fa-brands fa-instagram  bg-dark-blue text-white rounded-circle mx-2 "></i>
+                <i class="fa-brands fa-linkedin-in p-1  bg-dark-blue text-white rounded-circle mx-2 "></i>
+            </div>
+        </div>
+      </div>
+
+    <!-- Cleaning Services -->
+    <div class="container mt-5 bg-blue  rounded-5">
+        <div class="row ps-lg-5 cleaning-row ">
+            <div class="col-md-12 col-lg-6 col-xl-6 col-sm-12 col-xs-12 cleaning-content ps-lg-5 mt-lg-5 py-5 px-5">
+                <h1 class="cleaning-text lh-1 d-none d-xl-block mt-lg-5">Cleaning Service</h1>
+                <h1 class="display-1 fw-bold text-dark-blue mt-lg-5 lh-1  d-none d-lg-block d-xl-none d-xxl-none">Cleaning Service</h1>
+                <h1 class="display-2 fw-bold text-dark-blue mt-lg-5 lh-1 d-none d-md-block d-lg-none d-xl-none d-xxl-none">Cleaning Service</h1>
+                <h1 class="display-3 fw-bold text-dark-blue lh-1 d-none d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none">Cleaning Service</h1>
+                <h1 class="display-1  fw-bold text-dark-blue lh-1 d-block d-sm-none d-md-none d-lg-none d-xl-none d-xxl-none">Cleaning Service</h1>
+                <h2 class="cleaning-text-color mt-4">We help you keep your space clean and safe.</h2>
+                <p class="fs-5 mt-4">Providing friendly, professional cleaning services for all our customers in the Greater Vancouver Area.</p>
+                <div class="appointment-booking mt-5">
+                    <button class="btn btn-appointment rounded-pill my-2  text-white fs-5 me-4">Appointment</button>
+                    <button class="btn btn-livebooking rounded-pill my-2   text-white fs-5 ">Live Book Now</button>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-3 col-xl-3 "></div>
+            <div class="col-md-12 col-lg-3 col-xl-3 cleaning-start d-none d-lg-block start-long-column">
+                <div class="start bg-blue rounded just mx-auto mt-5">
+                    <p class="display-18 mb-0"><i class="fa-regular fa-flag text-primary me-2"></i>start 2022</p>
+                    </div>
+                    <div class="start-separate-container d-none d-xl-block">
+                        <div class="start-basic">
+                            <p class="text-dark-blue display-18">01. Basic</p>
+                            <img src="./assets/images/mbr-2-134x89.jpg" alt="" class="d-flex justify-content-center">
+                        </div>
+                        <div class="start-standard">
+                            <p class="text-dark-blue display-18">02. Standard</p>
+                                <img src="./assets/images/mbr-134x93.jpg" class="standard-image">
+                                <img src="./assets/images/mbr-3-134x89.jpg" alt="">
+                        </div>
+                        <div class="start-move-out">
+                            <p class="text-dark-blue display-18">03. Move-out</p>
+                            <img src="./assets/images/mbr-134x66.jpg" alt="">
+                            <img src="./assets/images/mbr-4-134x89.jpg" alt="">
+                            <img src="./assets/images/mbr-132x86.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="start-separate-container another-separate-container d-none d-lg-block d-xl-none d-xxl-none">
+                        <div class="start-basic">
+                            <p class="text-dark-blue display-18">01. Basic</p>
+                            <img src="./assets/images/mbr-2-134x89.jpg" alt="" class="d-flex justify-content-center">
+                        </div>
+                        <div class="start-standard">
+                            <p class="text-dark-blue display-18">02. Standard</p>
+                                <img src="./assets/images/mbr-134x93.jpg" class="standard-image">
+                                <img src="./assets/images/mbr-3-134x89.jpg" alt="">
+                        </div>
+                        <div class="start-move-out">
+                            <p class="text-dark-blue display-18">03. Move-out</p>
+                            <img src="./assets/images/mbr-134x66.jpg" alt="">
+                            <img src="./assets/images/mbr-4-134x89.jpg" alt="">
+                            <img src="./assets/images/mbr-132x86.jpg" alt="">
+                        </div>
+                    </div>
+            </div>
+            <div class="col-12 d-none d-md-block d-lg-none d-xl-none d-xxl-none">
+                <div class="start-separate-container bottom-container-cleaner">
+                    <div class="start-basic">
+                        <p class="text-dark-blue display-18">01. Basic</p>
+                        <img src="./assets/images/mbr-2-134x89.jpg" alt="" class="d-flex justify-content-center">
+                    </div>
+                    <div class="start-standard">
+                        <p class="text-dark-blue display-18">02. Standard</p>
+                            <img src="./assets/images/mbr-134x93.jpg" class="standard-image">
+                            <img src="./assets/images/mbr-3-134x89.jpg" alt="">
+                    </div>
+                    <div class="start-move-out">
+                        <p class="text-dark-blue display-18">03. Move-out</p>
+                        <img src="./assets/images/mbr-134x66.jpg" alt="">
+                        <img src="./assets/images/mbr-4-134x89.jpg" alt="">
+                        <img src="./assets/images/mbr-132x86.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 d-block d-md-none d-lg-none d-xl-none d-xxl-none">
+                <div class="start-separate-container another-separate-container bottom-container-cleaner centering-container-basics  ">
+                    <div class="start-basic ms-1">
+                        <p class="text-dark-blue display-18">01. Basic</p>
+                        <img src="./assets/images/mbr-2-134x89.jpg" alt="" class="d-flex justify-content-center">
+                    </div>
+                    <div class="start-standard ms-1">
+                        <p class="text-dark-blue display-18">02. Standard</p>
+                            <img src="./assets/images/mbr-134x93.jpg" class="standard-image">
+                            <img src="./assets/images/mbr-3-134x89.jpg" alt="">
+                    </div>
+                    <div class="start-move-out ms-1">
+                        <p class="text-dark-blue display-18">03. Move-out</p>
+                        <img src="./assets/images/mbr-134x66.jpg" alt="">
+                        <img src="./assets/images/mbr-4-134x89.jpg" alt="">
+                        <img src="./assets/images/mbr-132x86.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Features -->
+    <div class="container" id="features">
+        <div class="row">
+            <h1 class="display-3 fw-normal text-dark-blue text-center my-5">Features</h1>
+        </div>
+    </div>
+
+    <!-- Features -->
+    <div class="container">
+        <div class="row features py-5">
+            <div class="col-xl-4 col-lg-6 col-md-6 px-3 mt-3">
+                <div class="card border-0 rounded-4 p-2">
+                    <div class="card-header bg-dark-blue text-white d-flex justify-content-between align-items-center p-4 feature-card-header">
+                        <h3>ECO Friendly</h3>
+                        <div class="circles-loading">
+                            <i class="fa-solid fa-circle "></i>
+                            <i class="fa-solid fa-circle ms-1 opacity-50"></i>
+                            <i class="fa-solid fa-circle ms-1 opacity-50"></i>
+                        </div>
+                    </div>
+                    <div class="card-body rounded-4 rounded-top bg-blue px-4 pb-3 pt-5 feature-card-body">
+                        <p class="display-7 px-3">We use environmentally friendly products whenever possible to keep your family safe.</p>
+                        <h1 class="feature-number display-5 text-dark-blue fw-normal">1</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 px-3 mt-3">
+                <div class="card border-0 rounded-4 p-2">
+                    <div class="card-header bg-dark-blue text-white d-flex justify-content-between align-items-center p-4 feature-card-header">
+                        <h3>Like</h3>
+                        <div class="circles-loading">
+                            <i class="fa-solid fa-circle "></i>
+                            <i class="fa-solid fa-circle ms-1"></i>
+                            <i class="fa-solid fa-circle ms-1 opacity-50"></i>
+                        </div>
+
+                    </div>
+                    <div class="card-body rounded-4 rounded-top bg-blue px-4 pb-3 pt-5  feature-card-body">
+                        <p class="display-7 px-3">Our customers love how great their homes look and feel after each clean.</p>
+                        <h1 class="feature-number display-5 text-dark-blue fw-normal">2</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 px-3 mt-3">
+                <div class="card border-0 rounded-4 p-2">
+                    <div class="card-header bg-dark-blue text-white d-flex justify-content-between align-items-center p-4 feature-card-header">
+                        <h3>Fully</h3>
+                        <div class="circles-loading">
+                            <i class="fa-solid fa-circle "></i>
+                            <i class="fa-solid fa-circle ms-1"></i>
+                            <i class="fa-solid fa-circle ms-1 "></i>
+                        </div>
+
+                    </div>
+                    <div class="card-body rounded-4 rounded-top bg-blue px-4 pb-3 pt-5 feature-card-body">
+                        <p class="display-7 px-3">We're a fully insured, locally registered BC business serving the Vancouver area.</p>
+                        <h1 class="feature-number display-5 text-dark-blue fw-normal">3</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-12 col-lg-6 col-md-6 mt-3 d-block d-xl-none d-xxl-none">
+                <div class="col-lg-12 col-md-12 ps-5 col-sm-10 feature-bolt-col-lorem d-flex justify-content-around  align-items-start">
+                    <div class="icon mt-5 me-3">
+                        <i class="fa-solid fa-bolt fs-2 d-none d-md-block d-lg-block text-dark-blue mt-5"></i>
+                        <i class="fa-solid fa-bolt display-4 d-block d-md-none d-lg-none text-dark-blue"></i>
+                    </div>
+                    <div class="text">
+                        <p class="text-dark-blue fs-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit:</p>
+                        <p class="display-7">We help you keep your space clean and safe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4 d-none d-md-none d-xl-block">
+        <div class="row ">
+            <div class="container mt-4">
+                <div class="row row-feature">
+                    <div class="bolt-icon offset-lg-2 col-lg-1 ">
+                        <i class="fa-solid fa-bolt fa-bolt-icon px-5 text-dark-blue"></i>
+                    </div>
+                    <p class="text-dark-blue fs-30 tracking-widest col-lg-5 col-md-12 ps-5 col-sm-10  feature-bolt-lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit:
+                    </p>
+                    <p class="display-7 col-lg-3 col-sm-12 col-xs-12 ">We help you keep your space clean and safe.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sanitized cleaning -->
+    <div class="bg-blue">
+        <div class="container mt-5 p-5">
+            <h1 class="display-3 text-center sanitized-h1tag text-dark-blue fw-normal">Sanitized Cleaning</h1>
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-3 sanitized-cleaning mt-4">
+                    <i class="fa-regular fa-thumbs-up fs-2"></i>
+                    <h3 class="sanitized-cleaning-heading">Friendly service</h3>
+                    <p class="sanitized-cleaning-para">Our customers love how great their homes look and feel after each clean.</p>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 sanitized-cleaning mt-4">
+                    <i class="fa-solid fa-camera fs-2"></i>
+                    <h3 class="sanitized-cleaning-heading">No hidden</h3>
+                    <p class="sanitized-cleaning-para">We provide a health and safety focused approach to cleaning that gets essential areas sanitized while protecting all of your belongings.</p>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 sanitized-cleaning mt-4">
+                    <i class="fa-solid fa-gift fs-2"></i>
+                    <h3 class="sanitized-cleaning-heading">Satisfaction</h3>
+                    <p class="sanitized-cleaning-para">We provide a health and safety focused approach to cleaning that gets essential areas sanitized while protecting all of your belongings.</p>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 sanitized-cleaning mt-4">
+                    <i class="fa-solid fa-house fs-2"></i>
+                    <h3 class="sanitized-cleaning-heading">Сosiness</h3>
+                    <p class="sanitized-cleaning-para">We provide a health and safety focused approach to cleaning that gets essential areas sanitized while protecting all of your belongings.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Reviews -->
+    <div class="container my-5" id="about-us">
+        <h1 class="display-3 fw-normal text-center text-dark-blue">Reviews about us</h1>
+    </div>
+
+
+    <!-- Reviews -->
+    <div class="container">
+        <div class="row g-4 p-xl-5 review">
+            <div class="col-lg-6 col-md-6">
+                <div class="bg-blue p-sm-5 p-3 rounded-4">
+                    <p class="display-7 review-lorem-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto beatae  esse in natus numquam quibusdam quod  suscipit tempore veritatis.</p>
+                    <div class="d-flex align-items-center">
+                        <div class="review-image">
+                            <img src="./assets/images/image4.jpg" class=" rounded-circle">
+                        </div>
+                        <div class="review-content ms-2 mt-2">
+                            <p class="display-7">Mary Show <br> level 4 </p>
+                        </div>
+                        <div class="review-icon mb-4 ms-3">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="bg-blue  p-sm-5 p-3 rounded-4">
+                    <p class="display-7 review-lorem-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto beatae  esse in natus numquam quibusdam quod  suscipit tempore veritatis.</p>
+                    <div class="d-flex align-items-center">
+                        <div class="review-image">
+                            <img src="./assets/images/image4.jpg" class=" rounded-circle">
+                        </div>
+                        <div class="review-content ms-2 mt-2">
+                            <p class="display-7">Mary Show <br> level 4 </p>
+                        </div>
+                        <div class="review-icon mb-4 ms-3">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 4 - Images -->
+    <div class="bg-blue margin-top-images p-5">
+        <div class="container">
+            <div class="row  g-4">
+                <div class="col-sm-12 col-12 col-md-6">
+                    <div class="lon-image">
+                        <img src="./assets/images/image1.jpg" class=" rounded-4" alt="">
+                    </div>
+                </div>
+                <div class=" col-sm-12  col-md-6">
+                    <div class="lon-image">
+                        <img src="./assets/images/image2.jpg" class=" rounded-4" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row g-4 mt-3">
+                <div class="col-sm-12 col-md-6 ">
+                    <div class="lon-image">
+                        <img src="./assets/images/image3.jpg" class="img-fluid rounded-4" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="lon-image">
+                        <img src="./assets/images/image4.jpg" class="img-fluid rounded-4" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Stages -->
+    <div class="container" id="stages">
+        <div class="row">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <h1 class="display-3 text-dark-blue fw-normal my-5">Stages</h1>
+                <div class="stage-1 mt-4 gap-3 d-flex  stages-content-width  justify-content-center align-items-center">
+                    <button class="btn bg-dark-blue text-white rounded-circle fw-bold satges-button">1</button>
+                    <div class="content bg-blue rounded-4 col-sm-12 d-flex flex-column justify-content-center d-none stages-para  d-sm-block">
+                        <h3 class="bg-blue display-7  lh-1 stages-heading"><strong class="fw-bolder">Clean & polish sinks</strong></h3>
+                        <p class="display-7 fw-normal  stages-content-para ">You don't have to code to create your own site. Select one of available themes in the Mobirise sitebuilder.</p>
+                    </div>
+                    <div class="content bg-blue rounded-4 col-sm-12 d-flex flex-column justify-content-center stages-alternate-para  d-block d-sm-none p-4">
+                        <h3 class="bg-blue display-7  lh-1 stages-heading"><strong class="fw-bolder">Clean & polish sinks</strong></h3>
+                        <p class="display-7 fw-normal  stages-content-para ">You don't have to code to create your own site. Select one of available themes in the Mobirise sitebuilder.</p>
+                    </div>
+                </div>
+                <div class="stage-1 mt-4 gap-3 d-flex  stages-content-width  justify-content-center align-items-center">
+                    <button class="btn bg-dark-blue text-white rounded-circle fw-bold satges-button">2</button>
+                    <div class="content bg-blue rounded-4 col-sm-12 d-flex flex-column justify-content-center d-none d-sm-block stages-para">
+                        <h3 class="bg-blue display-7 stages-heading  lh-1"><strong class="fw-bolder">Disinfect & clean toilets</strong></h3>
+                        <p class="display-7  stages-content-para fw-normal">All sites you create with the Mobirise web builder are mobile-friendly natively. No special actions required.</p>
+                    </div>
+                    <div class="content bg-blue rounded-4 col-sm-12 d-flex flex-column justify-content-center stages-alternate-para d-block d-sm-none p-4">
+                        <h3 class="bg-blue display-7  lh-1 stages-heading"><strong class="fw-bolder">Disinfect & clean toilets</strong></h3>
+                        <p class="display-7 fw-normal  stages-content-para ">All sites you create with the Mobirise web builder are mobile-friendly natively. No special actions required.</p>
+                    </div>
+                </div>
+                <div class="stage-1 mt-4 gap-3 d-flex  stages-content-width  justify-content-center align-items-center">
+                    <button class="btn bg-dark-blue text-white rounded-circle fw-bold satges-button">3</button>
+                    <div class="content bg-blue rounded-4 col-sm-12 d-flex flex-column justify-content-center d-none d-sm-block stages-para">
+                        <h3 class="bg-blue display-7 stages-heading lh-1"><strong class="fw-bolder">Disinfect & clean showers/bathtubs</strong></h3>
+                        <p class="display-7  stages-content-para fw-normal">Select the theme that suits you. Each theme in the Mobirise site builder contains a set of unique blocks.</p>
+                    </div>
+                    <div class="content bg-blue rounded-4 col-sm-12 d-flex flex-column justify-content-center stages-alternate-para  d-block d-sm-none p-4">
+                        <h3 class="bg-blue display-7  lh-1 stages-heading"><strong class="fw-bolder">Disinfect & clean showers/bathtubs</strong></h3>
+                        <p class="display-7 fw-normal  stages-content-para ">Select the theme that suits you. Each theme in the Mobirise site builder contains a set of unique blocks.</p>
+                    </div>
+                </div>
+                <div class="stage-1 mt-4 gap-3 d-flex  stages-content-width  justify-content-center align-items-center mb-5">
+                    <button class="btn bg-dark-blue text-white rounded-circle fw-bold satges-button">4</button>
+                    <div class="content bg-blue rounded-4 col-sm-12 d-flex flex-column justify-content-center d-none d-sm-block  stages-para">
+                        <h3 class="bg-blue display-7 stages-heading lh-1"><strong class="fw-bolder">Wipe mirrors</strong></h3>
+                        <p class="display-7  stages-content-para fw-normal">Select the theme that suits you. Each theme in the Mobirise site builder contains a set of unique blocks.</p>
+                    </div>
+                    <div class="content bg-blue rounded-4 col-sm-12 d-flex flex-column justify-content-center stages-alternate-para d-block d-sm-none d-md-none p-4">
+                        <h3 class="bg-blue display-7  lh-1 stages-heading"><strong class="fw-bolder">Wipe mirrors</strong></h3>
+                        <p class="display-7 fw-normal  stages-content-para ">Select the theme that suits you. Each theme in the Mobirise site builder contains a set of unique blocks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Walk into immaculate home -->
+    <div class="bg-blue p-5 mt-5">
+        <div class="container py-5">
+            <div class="row text-center">
+                <h1 class="display-4 text-dark-blue fw-normal">Walk Into your Immaculate Home</h1>
+                <p class="text-center mt-2">We'll take care of the cleaning</p>
+            </div>
+            <div class="row px-5 accordian-padding mt-5">
+                <div id="bootstrap-toggle" class="toggle-panel accordionStyles tab-content offset-md-1 col-md-10 offset-sm-0 offset-xs-0 col-sm-12 col-xs-12">
+                    <div class=" border-top border-bottom  py-5">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <a role="button" class="collapsed panel-title text-black d-flex justify-content-between align-items-center" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_7" aria-expanded="false" aria-controls="collapse1">
+                                <h3 class="panel-title-edit ">Add-ons
+                                </h3>
+                                <i class="fa-solid fa-plus "></i>
+                            </a>
+                        </div>
+                        <div id="collapse1_7" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body mt-5">
+                                <p class=" panel-text display-6">Customize your service for an additional $40 each:
+                                </p>
+                                <ul class="list ">
+                                    <li class="display-6">Clean and wipe walls
+                                    </li><li class="display-6">Clean interior of fridge</li>
+                                    <li class="display-6">Wipe interior of oven</li>
+                                </ul>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="row px-5 accordian-padding">
+                <div id="bootstrap-toggle" class="toggle-panel accordionStyles tab-content offset-md-1 col-md-10 offset-sm-0 offset-xs-0 col-sm-12 col-xs-12">
+                    <div class="py-5 border-bottom">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <a role="button" class="collapsed panel-title text-black d-flex justify-content-between align-items-center" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse2_7" aria-expanded="false" aria-controls="collapse2">
+                                <h3 class="panel-title-edit mbr-fonts-style ">How to create more items in this list?
+                                </h3>
+                                <i class="fa-solid fa-plus "></i>
+                            </a>
+                        </div>
+                        <div id="collapse2_7" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <p class="display-6 panel-text mt-5">Customize your service for an additional $40 each:
+                                </p>
+                                <ul class="list mbr-fonts-style ">
+                                    <li class="display-6">Clean and wipe walls
+                                    </li><li class="display-6">Clean interior of fridge</li>
+                                    <li class="display-6">Wipe interior of oven</li>
+                                </ul>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Our pricing -->
+    <div class="bg-dark-blue py-5 pricing" id="pricing">
+        <h1 class="text-center text-white display-3 fw-normal mb-5">Our Pricing</h1>
+        <div class="container mt-5 ">
+            <div class="row pricing-row  ">
+                <div class="col-lg-6 col-xl-4 col-md-6 mt-3">
+                    <div class="p-3 py-5 bg-white rounded-4">
+                        <div class="circles-loading text-center">
+                            <i class="fa-solid fa-circle text-dark-blue"></i>
+                            <i class="fa-solid fa-circle text-dark-blue opacity-50"></i>
+                            <i class="fa-solid fa-circle text-dark-blue opacity-50"></i>
+                        </div>
+                        <div class="pricing-plan p-2 rounded mt-3">
+                            <h2 class="text-dark-blue text-center">Basic</h2>
+                        </div>
+                        <div class="pricing-plan-content px-4">
+                            <div class="pricing-kitchen my-5">
+                                <p class="fs-5">Bathroom</p>
+                                <p ><li class="display-7">Clean & polish sinks</li></p>
+                            </div>
+                            <div class="pricing-kitchen my-5">
+                                <p class="fs-5 text-underline">Kitchen</p>
+                                <p ><li class="display-7">Disinfect & clean sinks</li></p>
+                                <p ><li class="display-7">Clean appliance surfaces</li></p>
+                            </div>
+                            <div class="pricing-livin-area my-5">
+                                <p class="fs-5 text-underline">All living areas</p>
+                                <p ><li class="display-7">Sanitize light switches</li></p>
+                                <p ><li class="display-7">Wipe surfaces within reach</li></p>
+                                <p ><li class="display-7">Clean floors</li></p>
+                            </div>
+                        </div>
+                        <div class="pricing-plan p-2 rounded mt-5">
+                            <h2 class="text-dark-blue text-center fw-normal">$150</h2>
+                        </div>
+                        <div class="pricing-plan-button d-flex justify-content-center mt-5">
+                            <button class="btn px-4 py-3 w-75 text-center display-6 bg-dark-blue text-white px-5 rounded-pill">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4 col-md-6 mt-3">
+                    <div class="p-3 py-5 bg-white rounded-4">
+                        <div class="circles-loading text-center">
+                            <i class="fa-solid fa-circle text-dark-blue"></i>
+                            <i class="fa-solid fa-circle text-dark-blue "></i>
+                            <i class="fa-solid fa-circle text-dark-blue opacity-50"></i>
+                        </div>
+                        <div class="pricing-plan p-2 rounded mt-3">
+                            <h2 class="text-dark-blue text-center">Standard</h2>
+                        </div>
+                        <div class="pricing-plan-content px-4">
+                            <div class="pricing-kitchen my-5">
+                                <p class="fs-5">Bathroom</p>
+                                <p ><li class="display-7">Clean & polish all fixtures</li></p>
+                            </div>
+                            <div class="pricing-kitchen my-5">
+                                <p class="fs-5 text-underline">Kitchen</p>
+                                <p ><li class="display-7">Clean counters & backsplash</li></p>
+                                <p ><li class="display-7">Wipe interior of microwave</li></p>
+
+                            </div>
+                            <div class="pricing-livin-area my-5">
+                                <p class="fs-5 text-underline">All living areas</p>
+                                <p ><li class="display-7">Clean exterior of kitchen cabinets</li></p>
+                                <p ><li class="display-7">Clean floors</li></p>
+                                <p ><li class="display-7">Wipe mirrors</li></p>
+                            </div>
+                        </div>
+                        <div class="pricing-plan p-2 rounded mt-5">
+                            <h2 class="text-dark-blue text-center fw-normal">$250</h2>
+                        </div>
+                        <div class="pricing-plan-button d-flex justify-content-center mt-5">
+                            <button class="btn px-4 py-3 w-75 text-center display-6 bg-dark-blue text-white px-5 rounded-pill">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4 col-md-6 mt-3">
+                    <div class="p-3 py-5 bg-white rounded-4">
+                        <div class="circles-loading text-center">
+                            <i class="fa-solid fa-circle text-dark-blue"></i>
+                            <i class="fa-solid fa-circle text-dark-blue "></i>
+                            <i class="fa-solid fa-circle text-dark-blue "></i>
+                        </div>
+                        <div class="pricing-plan p-2 rounded mt-3">
+                            <h2 class="text-dark-blue text-center">Move-Out</h2>
+                        </div>
+                        <div class="pricing-plan-content px-4">
+                            <div class="pricing-kitchen my-5">
+                                <p class="fs-5">Bathroom</p>
+                                <p ><li class="display-7">Disinfect & clean showers/bathtubs</li></p>
+                            </div>
+                            <div class="pricing-kitchen my-5">
+                                <p class="fs-5 display-6 text-underline">Kitchen</p>
+                                <p ><li class="display-7">Clean counters & backsplash</li></p>
+                                <p ><li class="display-7">Clean interior of fridge</li></p>
+
+                            </div>
+                            <div class="pricing-kitchen my-5">
+                                <p class="fs-5 text-underline">All living areas</p>
+                                <p ><li class="display-7">Clean blinds</li></p>
+                                <p ><li class="display-7">Clean interior of windows</li></p>
+                                <p ><li class="display-7">Wipe walls</li></p>
+                            </div>
+                        </div>
+                        <div class="pricing-plan p-2 rounded mt-5">
+                            <h2 class="text-dark-blue text-center fw-normal">$350</h2>
+                        </div>
+                        <div class="pricing-plan-button d-flex justify-content-center mt-5">
+                            <button class="btn px-4 py-3 w-75 text-center display-6 bg-dark-blue text-white px-5 rounded-pill">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Contact us form -->
+    <div class="container my-5 contact-us-form" id="contactus">
+        <div class="bg-blue rounded-5 p-xl-5 p-3">
+            <div class="p-xl-5 p-md-5 contact-form-padding">
+                <div class="p-xl-5 p-md-5 row contact-form-padding">
+                    
+                    <div class="col-lg-6 order-lg-1 order-md-2 order-sm-2 order-xs-2 order-2">
+                        <div class="p-3 text-center bg-form-pop ">Thanks for filling out the form!</div>
+                        <h1 class="text-dark-blue display-3 fw-normal mt-3">Contact Us</h1>
+                        <p class="display-7" >We'll take care of the cleaning</p>
+                        <div class="form">
+                            <form action="" >
+                                <input type="text" class="display-7" name="" placeholder="Name"  id="">
+                                <input type="email" class="display-7" name="" placeholder="Email"  id="">
+                                <div class="row">
+                                    <div class="col-md-6 form-stage">
+                                        <p class="display-7">Stage</p>
+                                        <input type="radio" class="btn-check " name="options-base" id="option5" autocomplete="off" checked>
+                                        <label class="btn btn-outline-primary radio-btn" for="option5"></label> <span class="display-7">First</span>
+                                        <br>
+                                        <input type="radio" class="btn-check" name="options-base" id="option6" autocomplete="off">
+                                        <label class="btn btn-outline-primary radio-btn" for="option6"></label><span class="display-7">Second</span>
+                                        <br>
+                                        <input type="radio" class="btn-check" name="options-base" id="option7" autocomplete="off">
+                                        <label class="btn btn-outline-primary radio-btn" for="option7"></label><span class="display-7">Third</span>
+                                    </div>
+                                    <div class="col-md-6 form-variant">
+                                        <p class="display-7">Variant</p>
+                                        <div class="custome-checkbox" role="group" aria-label="Basic checkbox toggle button group">
+                                            <div class="">
+                                                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btncheck1"><span>light</span></label>
+                                            </div>
+                                          <div class="">
+                                            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                                            <label class="btn btn-outline-primary" for="btncheck2"><span>middle</span></label>  
+                                          </div>
+                                            <div class="">
+                                                <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                                            <label class="btn btn-outline-primary" for="btncheck3"><span >right</span></label>
+                                          
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                                <textarea name="" id="" cols="30" rows="2" placeholder="Details " class="mt-3 display-7" ></textarea>
+                                <input type="submit" value="To begin!" class="btn btn-to-begin rounded-pill my-3" onsubmit="formpopup(e)">
+                                
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-2 order-md-1 order-sm-1 order-xs-1 order-1 mb-3">
+                        <div class="contact-form-image">
+                            <img src="./assets/images/contact-form-img.jpg" class="rounded-4 mb-4 img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Contacts Phone & Email -->
+    <div class="bg-dark-blue mt-5">
+        <div class="container">
+            <h1 class="display-3 text-white text-center py-5 fw-normal">Contacts</h1>
+            <div class="row mt-3">
+                <div class="col-md-1"></div>
+                    <div class="col-md-5 contact-phone">
+                        <div class=" d-flex justify-content-start  align-items-center bg-white rounded-4">
+                            <div class="call-icon">
+                                <i class="fa-solid fa-phone fs-4 me-3"></i>
+                            </div>
+                            <div class="contact-phone-content">
+                                <h2 class="fw-100">Phone</h2>
+                                <p class="display-7">0(800)12345</p>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-md-5 contact-phone">
+                    <div class="p-5  d-flex justify-content-start px-5 py-4 align-items-center bg-white rounded-4">
+                        <div class="call-icon">
+                            <i class="fa-regular fa-envelope fs-4 me-3"></i>
+                        </div>
+                        <div class="contact-phone-content">
+                            <h2 class="fw-100">Email</h2>
+                            <p class="display-7">info@site.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+            </div>
+            </div>
+            <div class="row contact-second-row">
+                <div class="d-none d-sm-none d-md-block col-md-1"></div>
+                    <div class="col-md-5 contact-phone contact-address">
+                        <div class=" d-flex justify-content-start  align-items-center bg-white rounded-4">
+                            <div class="call-icon">
+                                <i class="fa-solid fa-baseball fs-4 me-3"></i>
+                            </div>
+                            <div class="contact-phone-content contact-address-content">
+                                <h2 class="fw-100">Address</h2>
+                                <p class="display-7">4100 Ross Street,Okawville 
+                                </p>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-md-5 mb-5 contact-phone contact-hours mt-4 mt-sm-0">
+                    <div class="p-5  d-flex justify-content-start px-5 py-4 align-items-center bg-white rounded-4">
+                        <div class="call-icon">
+                            <i class="fa-solid fa-list-ul fs-4 me-3"></i>
+                        </div>
+                        <div class="contact-phone-content contact-address-content">
+                            <h2 class="fw-100">Working Hours</h2>
+                            <p class="display-7">9:00 - 18:00</p>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Map -->
+    <div class="bg-blue p-5">
+        <h1 class="display-3 fw-normal py-5 text-dark-blue text-center">Map</h1>
+        <div class="container">
+            <div class="map row">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15588.86199054379!2d76.62970754999999!3d12.3684925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1711174835850!5m2!1sen!2sin" width="" height="450" class="rounded" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Our Partner -->
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col ">
+              <div class="card bg-dark-blue h-100 p-xl-5 p-3 rounded-4">
+                <img src="./assets/images/partner-image2.jpg" class="card-img-top card-img-height rounded-4"
+                  alt="Hollywood Sign on The Hill" />
+                <div class="card-body mt-3 text-center text-white">
+                  <h5 class="card-title fs-2">Our partner</h5>
+                  <p class="card-text fs-18 mb-5 mt-3 pb-4 ">
+                    Find your nearest Revolution Self-service laundry close to you by clicking on our store locator .
+                  </p>
+                  <button class="btn btn-partner-pink rounded-pill fs-18 fw-bold ">Contact</button>
+                </div>
+              </div>
+            </div>
+            <div class="col ">
+                <div class="card bg-dark-blue h-100 p-xl-5 p-3 rounded-4">
+                  <img src="./assets/images/partner-image1.jpg" class="card-img-top card-img-height  rounded-4"
+                    alt="Hollywood Sign on The Hill" />
+                  <div class="card-body mt-3 text-center text-white">
+                    <h5 class="card-title fs-2">Our partner</h5>
+                    <p class="card-text fs-18 mb-5 mt-3 pb-4 ">
+                        The Revolution ran is a full range of reliable equipment scalable with different sizes/footprint for indoor and outdoor locations.
+                    </p>
+                    <button class="btn btn-partner-pink rounded-pill fs-18 fw-bold ">Contact</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col ">
+                <div class="card bg-dark-blue h-100 p-xl-5 p-3 rounded-4">
+                  <img src="./assets/images/partner-image2.jpg" class="card-img-top card-img-height  rounded-4"
+                    alt="Hollywood Sign on The Hill" />
+                  <div class="card-body mt-3 text-center text-white">
+                    <h5 class="card-title fs-2">Our partner</h5>
+                    <p class="card-text fs-18 mb-5 mt-3 pb-4 ">
+                        Let us take some of the burden off your shoulders and leave your space professionally cleaned.
+                    </p>
+                    <button class="btn btn-partner-pink rounded-pill fs-18 fw-bold ">Contact</button>
+                  </div>
+                </div>
+              </div>
+            
+          </div>
+    </div>
+
+
+    <!-- Regular customers -->
+    <div class="container mt-5">
+        <div class="row mt-5">
+            <h2 class="display-3 fw-normal text-dark-blue text-center">Regular Customers</h2>
+        </div>
+    </div>
+
+    <!-- image carousel -->
+    <div class="container my-5">
+        <div class="carousel-container row d-flex align-items-center justify-content-center">
+            <div class="col-lg-1 d-flex align-items-center justify-content-center">
+                <button class="carousel-control-prev carousel-control-buttons" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next d-block mx-4 d-lg-none d-xl-none carousel-control-buttons" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+            </div>
+            <div id="carouselExample" class="carousel slide col-lg-8 col-sm-12 mt-4">
+              <div class="carousel-inner">
+                <div class="carousel-item active bg-blue p-4 rounded-5">
+                    <div class=" bg-carousel-blue  p-xl-5 rounded-5">
+                        <p class="fs-5 lh-sm fw-normal">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipisci[ng] velit, sed quia non numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?</p>
+                        <div class="name-icon d-flex  align-items-center">
+                        <img src="./assets/images/review-photo-1.jpg" class="carousel-img" alt="carousel-img">
+                        <p class="display-7 mx-3">Myrtle Fitzgerald</p>
+                        <i class="fa-brands fa-instagram "></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-item bg-blue p-4 rounded-5">
+                    <div class=" bg-carousel-blue p-xl-5 bg-blue rounded-5">
+                        <p class="fs-5 lh-sm fw-normal">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipisci[ng] velit, sed quia non numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?</p>
+                        <div class="name-icon d-flex  align-items-center">
+                        <img src="./assets/images/review-photo-1.jpg" class="carousel-img" alt="carousel-img">
+                        <p class="display-7 mx-3">Myrtle Fitzgerald</p>
+                        <i class="fa-brands fa-instagram "></i>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item bg-blue p-4 rounded-5">
+                    <div class=" bg-carousel-blue p-xl-5 bg-blue rounded-5">
+                        <p class="fs-5 lh-sm fw-normal">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipisci[ng] velit, sed quia non numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?</p>
+                        <div class="name-icon d-flex  align-items-center">
+                        <img src="./assets/images/review-photo-1.jpg" class="carousel-img" alt="carousel-img">
+                        <p class="display-7 mx-3">Myrtle Fitzgerald</p>
+                        <i class="fa-brands fa-instagram "></i>
+    
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="col-lg-1">
+                <button class="carousel-control-next d-none d-lg-block d-xl-block carousel-control-buttons" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+          </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="bg-dark-blue footer p-5">
+        <div class="container p-4">
+            <div class="row py-2">
+                <div class="col-md-4  text-center">
+                    <p class="display-7 text-white ">
+                        Claire Clean  <br> About Us
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <p class="display-7 text-white ">Cleaning Services <br> Book Appointment</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <p class="display-7 text-white">
+                        Cancellation Policy <br> Our Pricing
+                    </p>
+                </div>
+            </div>
+            <div class="row footer-keeping-clean mt-4">
+                <p class="display-6 text-center">Keeping it clean since 2018</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bg-black footer-copy mb-0  p-4">
+        <p class="display-6  text-center">
+            &copy;  Copyright 2025 Mobirise - All Rights Reserved
+        </p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        var bars = document.querySelector('.fa-bars');
+        bars.addEventListener('click',function(){
+            bars.classList.toggle('fa-xmark')
+
+        })
+        var popupformbtn = document.querySelector('.btn-to-begin')
+        popupformbtn.addEventListener('click', function(e){
+            e.preventDefault()
+            var formpopup = document.querySelector('.bg-form-pop')
+            formpopup.style.display = 'block'
+        })
+    </script>
+</body>
+</html>
